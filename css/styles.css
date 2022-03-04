@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000411;
+}
+
+section {
+  color: #fefae0;
+  height: 100vh;
+  margin: auto 25px;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .intro {
+  font-size: 2.3rem;
+}
+
+#word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#word .motivation {
+  text-align: center;
+  font-style: italic;
+}
+
+#skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skill .progress-header {
+  margin: 0;
+}
+
+#skill .progress {
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+#skill .progress-bar {
+  background-color: #ff6663;
+}
+
+#skill .polygon-skill-container {
+  display: none;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .carousel-item {
+  background-color: #160c28;
+}
+
+#projects .carousel-item .project-desc {
+  padding: 5px;
+}
+
+#contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contacts .contacts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#contacts .contacts-container .contact-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contacts .contacts-container .contact-image .contact-profile {
+  width: 60%;
+  -webkit-box-shadow: 7px 7px #000411, 12px 12px #ff6663;
+          box-shadow: 7px 7px #000411, 12px 12px #ff6663;
+}
+
+#contacts .contacts-container .contact-word {
+  margin-top: 10px;
+}
+
+#contacts .contacts-container .polygon-contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contacts .contacts-container .polygon-contact-container .polygon-contact {
+  display: inline-block;
+  margin: 10px;
+}
+
+#contacts .contacts-container .polygon-contact-container .polygon-contact-row:nth-last-child(1) {
+  margin-top: -15px;
+}
+/*# sourceMappingURL=styles.css.map */

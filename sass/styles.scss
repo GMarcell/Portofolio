@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000411;
+}
+
+section{
+    color: #fefae0;
+    height: 100vh;
+    margin: auto 25px;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    .intro{
+        font-size: 2.3rem;
+    }
+}
+
+
+#word{
+    display: flex;
+    align-items: center;
+    .motivation{
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+#skill{
+    display: flex;
+    align-items: center;
+    .progress-header{
+        margin: 0;
+    }
+    .progress{
+        height: 3px;
+        margin-bottom: 10px;
+    }
+    .progress-bar{
+        background-color: #ff6663;
+    }
+    .polygon-skill-container{
+        display: none;
+    }
+    // .polygon-container{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     .polygon-row{
+    //         margin-bottom: -15px;
+    //         .polygon{
+    //             display: inline-block;
+    //             width: 50px;
+    //             height: 50px;
+    //             background-color: #160c28;
+    //             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    //         }
+    //     }
+    // }
+}
+
+#projects{
+    display: flex;
+    align-items: center;
+    .carousel-item{
+        background-color: #160c28;
+        .project-desc{
+            padding: 5px;
+        }
+    }
+}
+
+#contacts{
+    display: flex;
+    align-items: center;
+    .contacts-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        .contact-image{
+            display: flex;
+            justify-content: center;
+            .contact-profile{
+                width: 60%;
+                box-shadow: 7px 7px #000411, 12px 12px #ff6663;
+            }
+        }
+        .contact-word{
+            margin-top: 10px;
+        }
+        .polygon-contact-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+                .polygon-contact{
+                    display: inline-block;
+                    margin: 10px;
+                }
+            .polygon-contact-row:nth-last-child(1){
+                margin-top: -15px;
+            }
+        }
+    }
+}
