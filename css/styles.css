@@ -13,11 +13,11 @@ body {
 
 section {
   color: #fefae0;
-  height: 100vh;
   margin: auto 25px;
 }
 
 #home {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +31,7 @@ section {
 }
 
 #word {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +46,7 @@ section {
 }
 
 #skill {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +57,7 @@ section {
 
 #skill .progress-header {
   margin: 0;
+  font-style: italic;
 }
 
 #skill .progress {
@@ -66,34 +69,56 @@ section {
   background-color: #ff6663;
 }
 
-#skill .polygon-skill-container {
-  display: none;
-}
-
 #projects {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#projects .carousel-item {
+#projects .container {
+  margin-top: 10px;
+  height: 80vh;
+  overflow: auto;
+}
+
+#projects .project-container {
+  margin: 10px auto;
+  width: 85%;
   background-color: #160c28;
+  border-radius: 5px;
+  border: 2px solid #ff6663;
 }
 
-#projects .carousel-item .project-desc {
-  padding: 5px;
+#projects .project-desc {
+  padding: 10px;
+}
+
+#projects img {
+  width: 100%;
 }
 
 #contacts {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#contacts a {
+  color: #fefae0;
 }
 
 #contacts .contacts-container {
@@ -152,5 +177,108 @@ section {
 
 #contacts .contacts-container .polygon-contact-container .polygon-contact-row:nth-last-child(1) {
   margin-top: -15px;
+}
+
+@media only screen and (min-width: 768px) {
+  #home .intro {
+    font-size: 5rem;
+  }
+  #projects {
+    height: 100vh;
+  }
+  #projects .container {
+    height: 400px;
+  }
+  #projects .project-container {
+    width: 70%;
+    height: 70%;
+  }
+  #contacts .contacts-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #contacts .contacts-container .contact-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #home .intro {
+    font-size: 6.5rem;
+  }
+  #word .motivation {
+    font-size: 3.5rem;
+  }
+  #skill .skill-intro {
+    font-size: 2rem;
+  }
+  #skill .skill-intro .header {
+    font-size: 3.5rem;
+  }
+  #skill .progress-header {
+    font-size: 2rem;
+  }
+  #projects {
+    height: 100vh;
+  }
+  #projects .container {
+    height: 500px;
+    width: 90vw;
+  }
+  #projects .project-container {
+    width: 70%;
+    height: 70%;
+  }
+  #projects .project-desc h1 {
+    font-size: 3.5rem;
+  }
+  #projects .project-desc p {
+    font-size: 2rem;
+  }
+  #projects .project-desc .built em {
+    font-size: 3rem;
+  }
+  #contacts .contacts-container {
+    margin-top: 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #contacts .contacts-container .contact-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contacts .contacts-container .contact-btn h2 {
+    font-size: 2rem;
+  }
+  #contacts .contacts-container .contact-btn em {
+    font-size: 4.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
