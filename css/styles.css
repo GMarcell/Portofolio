@@ -193,6 +193,9 @@ section {
     width: 70%;
     height: 70%;
   }
+  #projects .built {
+    margin-top: 10px;
+  }
   #contacts .contacts-container {
     display: -ms-grid;
     display: grid;
