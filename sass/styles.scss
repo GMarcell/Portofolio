@@ -84,8 +84,10 @@ section {
         padding: 10px;
     }
 
-    img {
-        width: 100%;
+    em {
+        font-size: 25px;
+        color: #ff6663;
+        margin-right: 10px;
     }
 }
 
@@ -152,11 +154,13 @@ section {
 
         .container {
             height: 400px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr)
         }
 
         .project-container {
             width: 70%;
-            height: 70%;
+            height: fit-content;
         }
 
         .built {
@@ -212,25 +216,27 @@ section {
         .container {
             height: 500px;
             width: 90vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .project-container {
             width: 70%;
-            height: 70%;
+            height: fit-content;
         }
 
         .project-desc {
             h1 {
-                font-size: 3.5rem;
+                font-size: 2rem;
             }
 
             p {
-                font-size: 2rem
+                font-size: 1.2rem
             }
 
             .built {
                 em {
-                    font-size: 3rem
+                    font-size: 2rem
                 }
             }
 
