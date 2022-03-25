@@ -72,9 +72,13 @@ section {
         overflow: auto;
     }
 
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
     .project-container {
         margin: 10px auto;
-        width: 85%;
+        width: 90%;
         background-color: #160c28;
         border-radius: 5px;
         border: 2px solid #ff6663;
